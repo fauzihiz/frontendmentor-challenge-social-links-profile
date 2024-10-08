@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+    body {
+      font-family: 'Inter';
+      background-color: #141414;
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      color: white;
+    }
+    main {
+      width: 388px;
+      height: 615px;
+      background-color: #1F1F1F;
+      padding: 16px 40px;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    #link-profile-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+    img {
+      border-radius: 50%;
+      width: 95px;
+      height: 95px;
+    }
+    #nameloc {
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+    #name {
+      font-size: 24px;
+    }
+    #location {
+      color: hsl(75, 94%, 57%);;
+      font-size: 14px;
+    }
+    #description {
+      font-size: 14px;
+    }
+    #socmed-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+    .socmed-button {
+      font-weight: bold;
+      font-size: 14px;
+      background-color: #333333;
+      border-radius: 10px;
+      width: 300px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .socmed-button:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: #1F1F1F;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="link-profile-content">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="avatar-jessica">
+      <div id="nameloc">
+        <div id="name">Jessica Randall</div>  
+        <div id="location">London, United Kingdom</div>  
+      </div>
+      <div id="description">"Front-end developer and avid reader."</div>  
+      <div id="socmed-link">
+        <div class="socmed-button">GitHub</div>
+        <div class="socmed-button">Frontend Mentor</div>
+        <div class="socmed-button">LinkedIn</div>
+        <div class="socmed-button">Twitter</div>
+        <div class="socmed-button">Instagram</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
